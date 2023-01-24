@@ -55,9 +55,9 @@ class Board
     true
   end
 
-  def reveal(pos)
-    self[pos][0].reveal
-    self[pos][0].face_value
+  def reveal(guessed_pos)
+    self[guessed_pos][0].reveal
+    self[guessed_pos][0].face_value
   end
 
   
