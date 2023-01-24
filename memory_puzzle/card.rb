@@ -24,10 +24,3 @@ class Card
 
     
 end
-
-my_card = Card.new('P')
-
-
-[1, 2, 3, 4]
-
-[4, 1, 3, 2]
