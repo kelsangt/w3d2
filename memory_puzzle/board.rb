@@ -30,5 +30,21 @@ class Board
     @grid[x][y] = value
   end
 
+  def render
+    @grid.each do |row|
+        letters = []
+        row.each do |ele|
+            if ele[0].face_up == true
+                letters << ele[0].face_value
+            else
+                letters << "_"
+            end
+        end
+        puts letters.join(' ')
+    end
+  end
+
+  
+
 end
 
