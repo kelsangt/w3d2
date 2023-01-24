@@ -44,6 +44,22 @@ class Board
     end
   end
 
+  def won?
+    @grid.each do |row|
+      row.each do |ele|
+        if ele[0].face_up == false
+          return false
+        end
+      end
+    end
+    true
+  end
+
+  def reveal(pos)
+    self[pos][0].reveal
+    self[pos][0].face_value
+  end
+
   
 
 end
